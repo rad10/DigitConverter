@@ -17,11 +17,12 @@
 
 def fromBinary(binary: int) -> int:
     """ From binary takes an int binary strand and converts it into a decimal number that represents the strand """
-    bin = int(binary)
+    bin = int(binary) # this was needed incase they gave something else like a string or a double
     dec = exp = 0
-    while (bin > 0):
+    while (bin > 0):  # this would whittle down the number until it got to 0
+        # This line made it so that every addition added to its total. bin % 10 gave me the digit at the very end. I used to use pow, but ** gave the same result without importing a library
         dec = dec + int((bin % 10) * 2 ** exp)
-        bin //= 10
+        bin //= 10 # doing this permanent change allowed me to get each digit in the line in reverse
         exp += 1
     return dec
 
@@ -41,11 +42,12 @@ def fromBinary(binary: int) -> int:
 def toBinary(dec: int) -> int:
     """ To Binary take a decimal number and converts it into an int Binary strand """
     dec = int(dec)
-    binary = ""
+    binary = ""  # To make the strand, I used a string so that each digit would sit side by side without adding together
+    # I could have done it without a string, but it would have required and extra exponent int to keep track of position.
     while (dec > 0):
-        binary = str(dec % 2) + binary
-        dec //= 2
-    return int(binary)
+        binary = str(dec % 2) + binary # i could have done it with an if statement between 0/1, but this was easier and worked better for the other formats
+        dec //= 2 # the //= means an even division, dropping the remainder. a decimal number would have destroyed it.
+    return int(binary) # in the end convert the string into a number for returning
 # /Binary
 # Octal
 
