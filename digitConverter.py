@@ -16,6 +16,7 @@
 
 
 def fromBinary(binary: int) -> int:
+    """ From binary takes an int binary strand and converts it into a decimal number that represents the strand """
     bin = int(binary)
     dec = exp = 0
     while (bin > 0):
@@ -38,6 +39,7 @@ def fromBinary(binary: int) -> int:
     return int(binary) """
 
 def toBinary(dec: int) -> int:
+    """ To Binary take a decimal number and converts it into an int Binary strand """
     dec = int(dec)
     binary = ""
     while (dec > 0):
@@ -60,11 +62,12 @@ def toBinary(dec: int) -> int:
 
 
 def fromOctal(octal: int) -> int:
+    """ From Octal takes a strand in octal and converts it into a decimal number """
     oct = int(octal)
     dec = exp = 0
     while (oct > 0):
         dec = dec+int((oct % 10) * 8 ** exp)
-        #print("oct:", oct)
+        # print("oct:", oct)
         # print("dec:",dec)
         oct //= 10
         exp += 1
@@ -86,6 +89,7 @@ def fromOctal(octal: int) -> int:
 
 
 def toOctal(dec: int) -> int:
+    """ To Octal takes a decimal number and converts it into an octal strand """
     dec = int(dec)
     octal = ""
     while (dec > 0):
