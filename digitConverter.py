@@ -69,11 +69,8 @@ def fromOctal(octal: int) -> int:
     dec = exp = 0
     while (oct > 0):
         dec = dec+int((oct % 10) * 8 ** exp)
-        # print("oct:", oct)
-        # print("dec:",dec)
         oct //= 10
         exp += 1
-        # print("exp:",exp)
     return int(dec)
 
 
