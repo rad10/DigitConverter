@@ -100,11 +100,3 @@ def toOctal(dec):
 # Hexadecimal
 
 # /Hexadecimal
-
-
-def test():
-    print(toOctal(15))
-    print(toOctalv2(15))
-
-
-test()
