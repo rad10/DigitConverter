@@ -15,7 +15,7 @@
     return int(dec) """
 
 
-def fromBinary(binary):
+def fromBinary(binary: int) -> int:
     bin = int(binary)
     dec = exp = 0
     while (bin > 0):
@@ -37,8 +37,7 @@ def fromBinary(binary):
         binary = (str(binary) + str(Binary[i]))
     return int(binary) """
 
-
-def toBinary(dec):
+def toBinary(dec: int) -> int:
     dec = int(dec)
     binary = ""
     while (dec > 0):
@@ -60,7 +59,7 @@ def toBinary(dec):
     return int(dec) """
 
 
-def fromOctal(octal):
+def fromOctal(octal: int) -> int:
     oct = int(octal)
     dec = exp = 0
     while (oct > 0):
@@ -86,7 +85,7 @@ def fromOctal(octal):
     return int(octal) """
 
 
-def toOctal(dec):
+def toOctal(dec: int) -> int:
     dec = int(dec)
     octal = ""
     while (dec > 0):
