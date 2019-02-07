@@ -1,10 +1,10 @@
 #!/bin/python
-from math import pow
+# from math import pow
 
 # Binary
 
 
-def fromBinary(binary):
+""" def fromBinary(binary):
     Binary = []
     for i in range(0, len(str(binary))):
         Binary.append(int(str(binary)[i]))
@@ -12,10 +12,10 @@ def fromBinary(binary):
     dec = 0
     for i in range(0, len(str(binary))):
         dec = dec + (int(Binary[i]) * pow(2, i))
-    return int(dec)
+    return int(dec) """
 
 
-def fromBinaryv2(binary):
+def fromBinary(binary):
     bin = int(binary)
     dec = exp = 0
     while (bin > 0):
@@ -25,7 +25,7 @@ def fromBinaryv2(binary):
     return dec
 
 
-def toBinary(dec):
+""" def toBinary(dec):
     dec = int(dec)
     Binary = []
     while (dec > 0):
@@ -35,10 +35,10 @@ def toBinary(dec):
     binary = ""
     for i in range(0, len(Binary)):
         binary = (str(binary) + str(Binary[i]))
-    return int(binary)
+    return int(binary) """
 
 
-def toBinaryv2(dec):
+def toBinary(dec):
     dec = int(dec)
     binary = ""
     while (dec > 0):
@@ -49,7 +49,7 @@ def toBinaryv2(dec):
 # Octal
 
 
-def fromOctal(octal):
+""" def fromOctal(octal):
     Octal = []
     for i in range(0, len(str(octal))):
         Octal.append(int(str(octal)[i]))
@@ -57,10 +57,10 @@ def fromOctal(octal):
     dec = 0
     for i in range(0, len(str(octal))):
         dec = dec + (int(Octal[i]) * pow(8, i))
-    return int(dec)
+    return int(dec) """
 
 
-def fromOctalv2(octal):
+def fromOctal(octal):
     oct = int(octal)
     dec = exp = 0
     while (oct > 0):
@@ -73,7 +73,7 @@ def fromOctalv2(octal):
     return int(dec)
 
 
-def toOctal(dec):
+""" def toOctal(dec):
     dec = int(dec)
     Octal = []
     while (dec > 0):
@@ -83,10 +83,10 @@ def toOctal(dec):
     octal = ""
     for i in range(0, len(Octal)):
         octal = (str(octal) + str(Octal[i]))
-    return int(octal)
+    return int(octal) """
 
 
-def toOctalv2(dec):
+def toOctal(dec):
     dec = int(dec)
     octal = ""
     while (dec > 0):
