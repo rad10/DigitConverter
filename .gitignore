@@ -52,7 +52,3 @@ Temporary Items
 # Program file exclusions
 *.pyc
 **/*.pyc
-*.class
-**/*.class
-*.exe
-**/*.exe
