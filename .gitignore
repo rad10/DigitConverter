@@ -50,9 +50,5 @@ Temporary Items
 .vscode/ipch/
 
 # Program file exclusions
-*.pyc
-**/*.pyc
 *.class
 **/*.class
-*.exe
-**/*.exe
